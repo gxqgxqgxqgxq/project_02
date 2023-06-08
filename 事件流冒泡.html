@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 400px;
+            height: 500px;
+            background-color: pink;
+        }
+
+        .son {
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <script>
+        const fa = document.querySelector('.father')
+        const so = document.querySelector('.son')
+        document.addEventListener('click', function () {
+            alert('我是老大')
+        })
+        fa.addEventListener('click', function () {
+            alert('我是老二')
+        })
+        so.addEventListener('click', function (e) {
+            alert('我是老三')
+            e.stopPropagation()// 阻止冒泡
+        })
+        //默认冒泡，在监听函数第三个参数选择true为捕获
+
+
+
+    </script>
+</body>
+
+</html>

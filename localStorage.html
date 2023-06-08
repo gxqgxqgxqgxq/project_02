@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*      //1.存
+             localStorage.setItem('uname', 'pink')
+             //4.改
+             localStorage.setItem('uname', 'red')
+             //2.取
+             let uname1 = localStorage.getItem('uname')
+             alert(uname1)
+             //3.删
+             localStorage.removeItem('uname')
+     
+             //本地存储只能存储字符串
+             localStorage.setItem('age', 18)
+             alert(localStorage.getItem('age')) */
+        const obj = {
+            uname: 'hhh',
+            age: 12,
+            gender: '男'
+        }
+        //存储复杂类型时要转换为JSON字符串再进行存储
+
+        localStorage.setItem('obj', JSON.stringify(obj))
+        console.log(JSON.parse(localStorage.getItem('obj')))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 200px;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
+        .box1 {
+            background-color: red;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            right: 20px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <button>点击</button>
+    <div class="box">
+        广告
+        <div class="box1">X</div>
+    </div>
+    <script>
+        const box1 = document.querySelector('.box1')
+        box1.addEventListener('click', function () {
+            document.querySelector('.box').style.display = 'none'
+        })
+/*         const btn = document.querySelector('button')
+                                                                                        //事件监听函数 对象.addEventListener('事件类型'，执行函数)
+                                                                                        btn.addEventListener('click', function () {
+                                                                                            alert('hello')
+                                                                                        }) */
+    </script>
+</body>
+
+</html>

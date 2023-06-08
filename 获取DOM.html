@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--    <div class="box">123</div>
+    <p id="nav">导航栏</p> -->
+    <ul class="nav">
+        <li>我的首页</li>
+        <li>产品介绍</li>
+        <li>联系方式</li>
+    </ul>
+    <script>
+        /*         const box = document.querySelector('div')
+                console.log(box)
+                const nav = document.querySelector('#nav')
+                console.log(nav)
+                const li = document.querySelector(' ul li:first-child')
+                console.log(li)
+                const lis = document.querySelectorAll('ul li')
+                console.dir(lis) */
+        const nav = document.querySelector('.nav')
+        console.dir(nav)
+        const lis = document.querySelectorAll('.nav li')
+        for (let i = 1; i < lis.length; i++) {
+            console.log(lis[i])
+        }
+    </script>
+</body>
+
+</html>
